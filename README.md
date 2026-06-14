@@ -1,27 +1,20 @@
 # LinuxToMacOS
-GNOME Linux'u WhiteSur tema, ikonlar ve uzantılarla macOS benzeri bir deneyime dönüştürme rehberi
---------------------------
+
+GNOME Linux'u WhiteSur tema, ikonlar ve uzantılarla macOS benzeri bir deneyime dönüştürme rehberi.
+
 A complete GNOME customization guide to transform Linux into a polished macOS-inspired desktop using WhiteSur themes, extensions, blur effects and Apple-style UI components.
-# 🍏 LinuxToMacOS
-
-Transform your GNOME Linux desktop into a clean, modern, macOS-inspired experience using WhiteSur themes, GNOME extensions, blur effects, and Apple-style customization.
-
-GNOME masaüstünüzü WhiteSur temaları, GNOME uzantıları, blur efektleri ve Apple tarzı özelleştirmeler ile modern bir macOS deneyimine dönüştürün.
 
 ---
 
-## ✨ Features / Özellikler
+# 🍏 LinuxToMacOS
 
-### 🇬🇧 English
+GNOME masaüstünüzü WhiteSur temaları, GNOME uzantıları, blur efektleri ve Apple tarzı özelleştirmeler ile modern bir macOS deneyimine dönüştürün.
 
-* WhiteSur GTK Theme
-* WhiteSur Icon Pack
-* Apple San Francisco Fonts
-* macOS-style Dock
-* Blur Effects
-* Spotlight-like Search
-* Apple-style Top Menu
-* Portable SSD Support
+Transform your GNOME Linux desktop into a clean, modern, macOS-inspired experience using WhiteSur themes, GNOME extensions, blur effects, and Apple-style customization.
+
+---
+
+## ✨ Özellikler / Features
 
 ### 🇹🇷 Türkçe
 
@@ -34,9 +27,20 @@ GNOME masaüstünüzü WhiteSur temaları, GNOME uzantıları, blur efektleri ve
 * Apple Tarzı Üst Menü
 * Taşınabilir SSD Desteği
 
+### 🇬🇧 English
+
+* WhiteSur GTK Theme
+* WhiteSur Icon Pack
+* Apple San Francisco Fonts
+* macOS-style Dock
+* Blur Effects
+* Spotlight-like Search
+* Apple-style Top Menu
+* Portable SSD Support
+
 ---
 
-## 🖥️ Supported Distributions / Desteklenen Dağıtımlar
+## 🖥️ Desteklenen Dağıtımlar / Supported Distributions
 
 | Distribution       | Status |
 | ------------------ | ------ |
@@ -47,19 +51,19 @@ GNOME masaüstünüzü WhiteSur temaları, GNOME uzantıları, blur efektleri ve
 | Pop!_OS            | ✅      |
 | Fedora Workstation | ⚠️     |
 
-### 🇬🇧 English
-
-XFCE, KDE Plasma and Cinnamon are not officially supported.
-
 ### 🇹🇷 Türkçe
 
 XFCE, KDE Plasma ve Cinnamon masaüstü ortamları resmi olarak desteklenmemektedir.
 
+### 🇬🇧 English
+
+XFCE, KDE Plasma and Cinnamon are not officially supported.
+
 ---
 
-# 1. Configure Sudo Permissions (Debian Only)
-
 # 1. Sudo Yetkilerinin Yapılandırılması (Sadece Debian)
+
+# 1. Configure Sudo Permissions (Debian Only)
 
 ```bash
 su -
@@ -67,19 +71,19 @@ usermod -aG sudo $USER
 exit
 ```
 
-### 🇬🇧 English
-
-Log out and sign back in after running the commands.
-
 ### 🇹🇷 Türkçe
 
 Komutları çalıştırdıktan sonra oturumu kapatıp yeniden açın.
 
+### 🇬🇧 English
+
+Log out and sign back in after running the commands.
+
 ---
 
-# 2. Install Required Packages
-
 # 2. Gerekli Paketlerin Kurulumu
+
+# 2. Install Required Packages
 
 ```bash
 sudo apt update && sudo apt install -y \
@@ -91,25 +95,25 @@ chrome-gnome-shell \
 alacarte
 ```
 
-### 🇬🇧 English
-
-Install all required packages in a single command.
-
 ### 🇹🇷 Türkçe
 
 Gerekli tüm paketleri tek komutla yükler.
 
+### 🇬🇧 English
+
+Install all required packages in a single command.
+
 ---
 
-# 3. Install WhiteSur Theme & Icons
-
 # 3. WhiteSur Tema ve İkon Kurulumu
+
+# 3. Install WhiteSur Theme & Icons
 
 ```bash
 mkdir -p ~/.themes ~/.icons
 ```
 
-### GTK Theme / GTK Teması
+### GTK Teması / GTK Theme
 
 ```bash
 git clone https://github.com/vinceliuice/WhiteSur-gtk-theme.git --depth=1
@@ -119,7 +123,7 @@ cd WhiteSur-gtk-theme
 ./install.sh -t all -N glassy
 ```
 
-### Icon Theme / İkon Paketi
+### İkon Paketi / Icon Theme
 
 ```bash
 cd ~
@@ -133,9 +137,9 @@ cd WhiteSur-icon-theme
 
 ---
 
-# 4. Install Apple San Francisco Fonts
-
 # 4. Apple San Francisco Yazı Tiplerinin Kurulumu
+
+# 4. Install Apple San Francisco Fonts
 
 ```bash
 git clone https://github.com/AppleDesignResources/SanFranciscoFont.git --depth=1
@@ -147,19 +151,19 @@ cp SanFranciscoFont/*.otf ~/.local/share/fonts/
 fc-cache -fv
 ```
 
-### 🇬🇧 English
-
-Select **SF Pro Display** from GNOME Tweaks → Fonts.
-
 ### 🇹🇷 Türkçe
 
 GNOME Tweaks → Fonts bölümünden **SF Pro Display** seçin.
 
+### 🇬🇧 English
+
+Select **SF Pro Display** from GNOME Tweaks → Fonts.
+
 ---
 
-# 5. Recommended GNOME Extensions
-
 # 5. Önerilen GNOME Uzantıları
+
+# 5. Recommended GNOME Extensions
 
 | Extension        | Purpose / Amaç   |
 | ---------------- | ---------------- |
@@ -172,11 +176,11 @@ GNOME Tweaks → Fonts bölümünden **SF Pro Display** seçin.
 
 ---
 
-# 6. Interface Tweaks
-
 # 6. Arayüz İnce Ayarları
 
-## Date Format / Tarih Formatı
+# 6. Interface Tweaks
+
+## Tarih Formatı / Date Format
 
 ```text
 Settings → Region & Language
@@ -188,9 +192,9 @@ English (United States)
 
 ---
 
-## Hide Applications Grid Button
-
 ## Uygulamalar Menüsü Butonunu Gizleme
+
+## Hide Applications Grid Button
 
 ```bash
 gsettings set org.gnome.shell.extensions.dash-to-dock show-show-apps-button false
@@ -198,9 +202,9 @@ gsettings set org.gnome.shell.extensions.dash-to-dock show-show-apps-button fals
 
 ---
 
-## macOS Menu Bar
-
 ## macOS Menü Çubuğu
+
+## macOS Menu Bar
 
 ```text
 Finder   File   Edit   View   Go   Window   Help
@@ -208,9 +212,9 @@ Finder   File   Edit   View   Go   Window   Help
 
 ---
 
-# 7. Portable SSD GRUB Fix
-
 # 7. Taşınabilir SSD için GRUB Sabitleme
+
+# 7. Portable SSD GRUB Fix
 
 ```bash
 su -
@@ -227,21 +231,21 @@ update-grub
 
 ---
 
-# 8. Troubleshooting
-
 # 8. Sorun Giderme
 
-### Theme changes are not applied
+# 8. Troubleshooting
 
 ### Tema değişiklikleri uygulanmıyor
+
+### Theme changes are not applied
 
 ```text
 Log Out → Log In
 ```
 
-### Shell theme option missing
-
 ### Shell tema seçeneği görünmüyor
+
+### Shell theme option missing
 
 Enable:
 
@@ -251,9 +255,9 @@ User Themes
 
 ---
 
-# 9. Kali Linux Notes
-
 # 9. Kali Linux Notları
+
+# 9. Kali Linux Notes
 
 ```bash
 sudo apt update
@@ -277,16 +281,7 @@ at the login screen.
 
 ---
 
-# 🎯 Final Result / Nihai Sonuç
-
-### 🇬🇧 English
-
-* Apple-inspired desktop
-* WhiteSur theme
-* macOS-style Dock
-* Blur effects
-* SF Pro typography
-* Spotlight-like search
+# 🎯 Nihai Sonuç / Final Result
 
 ### 🇹🇷 Türkçe
 
@@ -297,10 +292,22 @@ at the login screen.
 * SF Pro yazı tipleri
 * Spotlight benzeri arama
 
----
+### 🇬🇧 English
+
+* Apple-inspired desktop
+* WhiteSur theme
+* macOS-style Dock
+* Blur effects
+* SF Pro typography
+* Spotlight-like search
 
 ---
 
-# 📜 License / Lisans
+# 🤝 Katkıda Bulunma / Contributing
 
-MIT License
+Pull request ve öneriler memnuniyetle karşılanır.
+
+Pull requests and suggestions are welcome.
+
+---
+
